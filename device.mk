@@ -5,9 +5,9 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 $(call inherit-product-if-exists, vendor/samsung/trlte/trlte-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/tblte/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/tbltespr/overlay
 
-LOCAL_PATH := device/samsung/tblte
+LOCAL_PATH := device/samsung/tbltespr
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab.qcom:recovery/root/fstab.qcom
@@ -19,5 +19,5 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, build/target/product/full.mk)
 
-PRODUCT_NAME := samsung_tblte
+PRODUCT_NAME := samsung_tbltespr
 PRODUCT_BRAND := Samsung
